@@ -20,6 +20,8 @@ struct HomeView: View {
             
             if $viewModel.isLoading.wrappedValue{
                 LoadingView()
+            }else if $viewModel.showError.wrappedValue{
+                ErrorView(tryAgainClosure: viewModel.getProductList)
             }else{
                 VStack(spacing: 32){
                     

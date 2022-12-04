@@ -24,6 +24,8 @@
 		6F37F5C6293BFE1400C83308 /* Alexandria.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F37F5C2293BFD3900C83308 /* Alexandria.ttf */; };
 		6F37F5C8293C0EF700C83308 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F5C7293C0EF700C83308 /* NetworkImage.swift */; };
 		6F37F5CB293C1B7E00C83308 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F5CA293C1B7E00C83308 /* ProductType.swift */; };
+		6F37F5CD293C1EC300C83308 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F5CC293C1EC300C83308 /* ErrorView.swift */; };
+		6F37F5CF293C216100C83308 /* NetworkTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F5CE293C216100C83308 /* NetworkTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		6F37F5C4293BFDA800C83308 /* FontConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstants.swift; sourceTree = "<group>"; };
 		6F37F5C7293C0EF700C83308 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		6F37F5CA293C1B7E00C83308 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
+		6F37F5CC293C1EC300C83308 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		6F37F5CE293C216100C83308 /* NetworkTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				6F37F59A293BAC6600C83308 /* ContentView.swift */,
 				6F37F5B2293BB4D500C83308 /* HomeView.swift */,
 				6F37F5B7293BC70800C83308 /* ProductDetailsView.swift */,
+				6F37F5CC293C1EC300C83308 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				6F37F5A8293BAD6700C83308 /* APIUrls.swift */,
+				6F37F5CE293C216100C83308 /* NetworkTester.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -261,10 +267,12 @@
 				6F37F5C8293C0EF700C83308 /* NetworkImage.swift in Sources */,
 				6F37F5C5293BFDA800C83308 /* FontConstants.swift in Sources */,
 				6F37F5B8293BC70800C83308 /* ProductDetailsView.swift in Sources */,
+				6F37F5CD293C1EC300C83308 /* ErrorView.swift in Sources */,
 				6F37F599293BAC6600C83308 /* Desafio_DigioApp.swift in Sources */,
 				6F37F5BE293BF44000C83308 /* HalfModalView.swift in Sources */,
 				6F37F5A9293BAD6700C83308 /* APIUrls.swift in Sources */,
 				6F37F5BB293BC95A00C83308 /* UINavigationController+Extension.swift in Sources */,
+				6F37F5CF293C216100C83308 /* NetworkTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,12 +19,19 @@ class ProductListViewModel: ObservableObject{
         
         isLoading = true
         
+        guard NetworkTester().isConnected() else{
+            self.isLoading = false
+            self.showError = true
+            return
+        }
+        
         do{
             try URLSession.shared.dataTask(with: APIUrls.getProducts.request()) { data, response, error in
                 
                 if let dataUnwrapped = data{
                     if let products = try? JSONDecoder().decode(ProductList.self, from: dataUnwrapped){
                         DispatchQueue.main.async {
+                            self.showError = false
                             self.productList = products
                             self.isLoading = false
                         }
