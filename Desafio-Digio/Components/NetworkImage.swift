@@ -19,7 +19,7 @@ struct NetworkImage: View {
     
     var body: some View {
         
-        AsyncImage(url: URL(string: imageURL)){ phase in
+        AsyncImage(url: URL(string: imageURL)) { phase in
             switch phase {
             case .empty:
                 placeholderView
@@ -33,9 +33,9 @@ struct NetworkImage: View {
         }
     }
     
-    var placeholderView: some View{
-        ZStack{
-            if displayPlaceholderBackground{
+    var placeholderView: some View {
+        ZStack {
+            if displayPlaceholderBackground {
                 RoundedRectangle(cornerRadius: cornerRadius ?? 8).fill(Color.white).frame(width: width, height: height).shadow(color: .black.opacity(0.2), radius: 4, x: 3, y: 3).padding(4)
             }
             

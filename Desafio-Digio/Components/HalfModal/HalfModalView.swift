@@ -15,7 +15,7 @@ extension UIApplication {
     }
 }
 
-//USAGE:
+// USAGE:
 
 /*
  
@@ -37,34 +37,33 @@ extension UIApplication {
  
  */
 
-struct HalfModalView<Content: View> : View {
+struct HalfModalView<Content: View>: View {
     @GestureState private var dragState = DragState.inactive
-    @Binding var isShown:Bool
-    var color:Color = .white
+    @Binding var isShown: Bool
+    var color: Color = .white
     
     private func onDragEnded(drag: DragGesture.Value) {
         let dragThreshold = modalHeight * (2/3)
-        if drag.predictedEndTranslation.height > dragThreshold || drag.translation.height > dragThreshold{
-            withAnimation(.easeInOut){
+        if drag.predictedEndTranslation.height > dragThreshold || drag.translation.height > dragThreshold {
+            withAnimation(.easeInOut) {
                 self.isShown = false
             }
         }
     }
     
-    var modalHeight:CGFloat = 420
-    
+    var modalHeight: CGFloat = 420
     
     var content: () -> Content
     var body: some View {
         let drag = DragGesture()
-            .updating($dragState) { drag, state, transaction in
+            .updating($dragState) { drag, state, _ in
                 state = .dragging(translation: drag.translation)
         }
         .onEnded(onDragEnded)
         return Group {
             ZStack {
-                GeometryReader{geometry in
-                    //Background
+                GeometryReader { geometry in
+                    // Background
                     
                     Spacer()
                         .frame(width: geometry.size.width, height: geometry.size.height)
@@ -74,26 +73,26 @@ struct HalfModalView<Content: View> : View {
                             TapGesture()
                                 .onEnded { _ in
                                     UIApplication.shared.endEditing()
-                                    withAnimation(.easeInOut){
+                                    withAnimation(.easeInOut) {
                                         
                                         self.isShown = false
                                     }
                             }
             )
                     
-                    //Foreground
-                    VStack{
+                    // Foreground
+                    VStack {
                         Spacer()
-                        ZStack{
+                        ZStack {
                             color.opacity(1.0)
-                                .frame(width: geometry.size.width-16, height:modalHeight)
+                                .frame(width: geometry.size.width-16, height: modalHeight)
                                 .cornerRadius(25)
                                 .shadow(radius: 5)
                             
                             self.content()
                             
                                 .padding()
-                                .frame(width: geometry.size.width-16, height:modalHeight)
+                                .frame(width: geometry.size.width-16, height: modalHeight)
                                 .clipped()
                         }
                         .offset(y: isShown ? ((self.dragState.isDragging && dragState.translation.height >= 1) ? dragState.translation.height : 0) : modalHeight)
@@ -129,10 +128,8 @@ enum DragState {
     }
 }
 
-
-
 func fraction_progress(lowerLimit: Double = 0, upperLimit:Double, current:Double, inverted:Bool = false) -> Double{
-    var val:Double = 0
+    var val: Double = 0
     if current >= upperLimit {
         val = 1
     } else if current <= lowerLimit {
@@ -149,4 +146,3 @@ func fraction_progress(lowerLimit: Double = 0, upperLimit:Double, current:Double
     }
     
 }
-

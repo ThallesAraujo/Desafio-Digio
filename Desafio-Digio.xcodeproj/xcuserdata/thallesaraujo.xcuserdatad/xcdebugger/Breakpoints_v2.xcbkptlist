@@ -30,10 +30,186 @@
             filePath = "Desafio-Digio/Views/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E5BC705-74A8-44E2-BB7D-B9BA19964108"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Desafio-Digio/ViewModels/ProductListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getProductList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6E5BC705-74A8-44E2-BB7D-B9BA19964108 - 24fa61a0b18bf493"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Desafio_Digio.ProductListViewModel.getProductList() -&gt; ()"
+                  moduleName = "Desafio-Digio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thallesaraujo/Developer/Desafio-Digio/Desafio-Digio/ViewModels/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "6E5BC705-74A8-44E2-BB7D-B9BA19964108 - 24fa61a0b18bf493"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Desafio_Digio.ProductListViewModel.getProductList() -&gt; ()"
+                  moduleName = "Desafio-Digio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thallesaraujo/Developer/Desafio-Digio/Desafio-Digio/ViewModels/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AABC173C-319C-495F-B179-3090513D6871"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Desafio-Digio/ViewModels/ProductListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getProductList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AABC173C-319C-495F-B179-3090513D6871 - ba27506fe450afbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Desafio_Digio.ProductListViewModel.getProductList() -&gt; ()"
+                  moduleName = "Desafio-Digio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thallesaraujo/Developer/Desafio-Digio/Desafio-Digio/ViewModels/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "AABC173C-319C-495F-B179-3090513D6871 - ba27506fe450afbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Desafio_Digio.ProductListViewModel.getProductList() -&gt; ()"
+                  moduleName = "Desafio-Digio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thallesaraujo/Developer/Desafio-Digio/Desafio-Digio/ViewModels/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BCB5093-4A1E-412E-BFC4-93A197BC06C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Desafio-Digio/ViewModels/ProductListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getProductList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BCB5093-4A1E-412E-BFC4-93A197BC06C0 - 77b4e7bbe10c9dd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Desafio_Digio.ProductListViewModel.getProductList() -&gt; ()"
+                  moduleName = "Desafio-Digio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thallesaraujo/Developer/Desafio-Digio/Desafio-Digio/ViewModels/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "3BCB5093-4A1E-412E-BFC4-93A197BC06C0 - 77b4e7bbe10c9dd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Desafio_Digio.ProductListViewModel.getProductList() -&gt; ()"
+                  moduleName = "Desafio-Digio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thallesaraujo/Developer/Desafio-Digio/Desafio-Digio/ViewModels/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "598FF973-DD00-4D94-B279-86A49D991F9E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Teste2/Desafio_DigioTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testResponseSpotlight()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5541C31-5E04-434D-A7ED-DC005E55EE99"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Teste2/Teste2_Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "testExample()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

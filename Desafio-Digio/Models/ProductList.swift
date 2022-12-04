@@ -23,7 +23,7 @@ struct Cash: Codable {
         case cashDescription = "description"
     }
     
-    func asProduct() -> Product{
+    func asProduct() -> Product {
         return Product(name: self.title, imageURL: self.bannerURL, productDescription: self.cashDescription, productType: .digioCash)
     }
 }
@@ -46,14 +46,13 @@ struct Spotlight: Codable, Hashable {
     var name: String
     var bannerURL: String
     var spotlightDescription: String
-
+    
     enum CodingKeys: String, CodingKey {
         case name, bannerURL
         case spotlightDescription = "description"
     }
     
-    func asProduct() -> Product{
+    func asProduct() -> Product {
         return Product(name: self.name, imageURL: self.bannerURL, productDescription: self.spotlightDescription, productType: .spotlight)
     }
 }
-

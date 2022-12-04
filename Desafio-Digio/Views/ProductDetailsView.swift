@@ -15,24 +15,24 @@ struct ProductDetailsView: View {
     
     var body: some View {
         HalfModalView(isShown: $isShown, content: {
-            VStack{
+            VStack {
                 ModalHandlerView(toggleDisplay: $isShown)
                 
-                VStack(spacing: 16){
+                VStack(spacing: 16) {
                     
                     Text(product?.name ?? "").font(alexandria18).fontWeight(.bold).foregroundColor(.accentColor)
                     
-                    ScrollView{
+                    ScrollView {
                         
-                        VStack(spacing: 32){
+                        VStack(spacing: 32) {
                             
-                            switch product?.productType{
+                            switch product?.productType {
                                 case .product:
-                                    NetworkImage(imageURL: product?.imageURL ?? "",width: 50, height: 50, displayPlaceholderBackground: false, contentMode: .fit)
+                                    NetworkImage(imageURL: product?.imageURL ?? "", width: 50, height: 50, displayPlaceholderBackground: false, contentMode: .fit)
                                 case .digioCash:
                                     NetworkImage(imageURL: product?.imageURL ?? "", width: 350, height: 100, cornerRadius: 8, displayPlaceholderBackground: false, contentMode: .fill)
                                 default:
-                                    NetworkImage(imageURL: product?.imageURL ?? "",height: 160, cornerRadius: 8, displayPlaceholderBackground: false)
+                                    NetworkImage(imageURL: product?.imageURL ?? "", height: 160, cornerRadius: 8, displayPlaceholderBackground: false)
                             }
                             Text(product?.productDescription ?? "")
                             

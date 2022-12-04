@@ -11,17 +11,16 @@ struct ModalHandlerView: View {
     @Binding var toggleDisplay: Bool
     @Environment(\.dismiss) private var dismiss
     
-    var onDismiss : (() -> Void)?
+    var onDismiss: (() -> Void)?
     
     var body: some View {
-        HStack{
+        HStack {
             Spacer()
             RoundedRectangle(cornerRadius: 8, style: .continuous).fill(Color.init(UIColor.secondarySystemFill.cgColor)).frame(width: 40, height: 8).offset(x: 20, y: -10)
             Spacer()
             
-            
             Button(action: {
-                withAnimation(.easeInOut){
+                withAnimation(.easeInOut) {
                     $toggleDisplay.wrappedValue.toggle()
                     
                     if let onDismiss = onDismiss {

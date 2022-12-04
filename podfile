@@ -1,0 +1,15 @@
+platform :ios, '15.0'
+use_frameworks!
+
+def common_pods
+    pod 'SwiftLint'
+end
+
+target 'Desafio-Digio' do
+    common_pods
+end
+
+target 'Desafio-DigioTests' do
+    common_pods
+    pod 'OHHTTPStubs/Swift'
+end

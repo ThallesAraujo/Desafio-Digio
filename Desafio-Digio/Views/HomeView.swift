@@ -16,33 +16,32 @@ struct HomeView: View {
     @State var product: Product?
     
     var body: some View {
-        ZStack{
+        ZStack {
             
-            if $viewModel.isLoading.wrappedValue{
+            if $viewModel.isLoading.wrappedValue {
                 LoadingView()
-            }else if $viewModel.showError.wrappedValue{
+            } else if $viewModel.showError.wrappedValue {
                 ErrorView(tryAgainClosure: viewModel.getProductList)
-            }else{
-                VStack(spacing: 32){
+            } else {
+                VStack(spacing: 32) {
                     
-                    ScrollView(.horizontal, showsIndicators: false){
-                        HStack{
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
                             ForEach($viewModel.productList.spotlight.wrappedValue, id: \.self) { spotlightItem in
                                 Button(action: {
                                     showProduct(spotlightItem.asProduct())
                                 }, label: {
-                                    NetworkImage(imageURL: spotlightItem.bannerURL,width: 340, height: 160)
+                                    NetworkImage(imageURL: spotlightItem.bannerURL, width: 340, height: 160)
                                 })
                                 
                             }
                         }
                     }
                     
-                    
-                    VStack(alignment: .leading){
+                    VStack(alignment: .leading) {
                         Text("digio ").font(alexandria18).fontWeight(.bold).foregroundColor(.accentColor) + Text("Cash").font(alexandria18).fontWeight(.bold).foregroundColor(.secondary)
                         
-                        GeometryReader{geometry in
+                        GeometryReader { geometry in
                             
                             Button(action: {
                                 showProduct($viewModel.productList.cash.wrappedValue.asProduct())
@@ -53,18 +52,17 @@ struct HomeView: View {
                         
                     }.padding()
                     
-                    
-                    VStack(alignment: .leading){
+                    VStack(alignment: .leading) {
                         Text("Produtos").font(alexandria18).fontWeight(.bold).foregroundColor(.accentColor)
                         
-                        ScrollView(.horizontal, showsIndicators: false){
-                            HStack{
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
                                 ForEach($viewModel.productList.products, id: \.self) { productItem in
                                     
                                     Button(action: {
                                         showProduct(productItem.wrappedValue)
                                     }, label: {
-                                        ZStack{
+                                        ZStack {
                                             RoundedRectangle(cornerRadius: 18).fill(Color.white).frame(width: 120, height: 120).shadow(color: .black.opacity(0.2), radius: 4, x: 3, y: 3).padding(4)
                                             
                                             NetworkImage(imageURL: productItem.imageURL.wrappedValue, width: 50, displayPlaceholderBackground: false)
@@ -78,10 +76,9 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    
                 }.toolbar(content: {
                     ToolbarItem(placement: .principal, content: {
-                        HStack{
+                        HStack {
                             Text("Olá, Maria").font(.system(size: 18).weight(.semibold))
                             Spacer()
                         }
@@ -96,8 +93,7 @@ struct HomeView: View {
         })
     }
     
-    
-    func showProduct(_ product: Product){
+    func showProduct(_ product: Product) {
         $product.wrappedValue = product
         $toggleProductDetail.wrappedValue.toggle()
     }

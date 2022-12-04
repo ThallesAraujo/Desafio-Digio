@@ -9,6 +9,31 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Desafio-DigioTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6F37F594293BAC6600C83308</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F432B31293D09C500A23CC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F5B63F8293CF7FA001AFF6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

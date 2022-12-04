@@ -1,0 +1,36 @@
+{
+  "spotlight": [
+    {
+      "name": "Spotlight 1",
+      "bannerURL": "https://spotlight-um.png",
+      "description": "Amarelo"
+    },
+    {
+      "name": "Spotlight 2",
+      "bannerURL": "https://spotlight-dois.png",
+      "description": "Verde"
+    },
+    {
+      "name": "Spotlight 3",
+      "bannerURL": "https://spotlight-tres.png",
+      "description": "Laranja"
+    }
+  ],
+  "products": [
+    {
+      "name": "Produto 1",
+      "imageURL": "https://produto-um.png",
+      "description": "Saturno"
+    },
+    {
+      "name": "Produto 2",
+      "imageURL": "https://produto-dois.png",
+      "description": "Júpiter"
+    }
+  ],
+  "cash": {
+    "title": "Cash 1",
+    "bannerURL": "https://cash-um.png",
+    "description": "Espanha"
+  }
+}

@@ -13,13 +13,12 @@ struct ErrorView: View {
     
     var body: some View {
         
-        VStack(spacing: 16){
+        VStack(spacing: 16) {
             
             Spacer()
             
             Image(systemName: "wifi.exclamationmark").font(.system(size: 62)).foregroundColor(.red)
 
-            
             Text("Ocorreu um erro. Verifique sua conexão e tente novamente.").font(alexandria18).multilineTextAlignment(.center)
             
             Spacer()

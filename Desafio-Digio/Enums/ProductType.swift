@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum ProductType{
+enum ProductType {
     case digioCash
     case product
     case spotlight
